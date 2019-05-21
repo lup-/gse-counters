@@ -193,7 +193,7 @@ function saveUserAndLoadCounters() {
 function sendCountersEmail() {
   let countersData = getDataFromDOM();
   let alsoSendEmail = $('#also').val();
-  countersData['to'] = ['gse@mailinator.com'];
+  countersData['to'] = ['counters@glavstroy-group.ru'];
   if (alsoSendEmail) {
     countersData['to'].push(alsoSendEmail);
   }
