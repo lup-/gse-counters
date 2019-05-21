@@ -1,0 +1,43 @@
+@media only screen and (max-width: 800px) {
+	
+	table.responsive-table, 
+	table.responsive-table thead, 
+	table.responsive-table tbody, 
+	table.responsive-table th, 
+	table.responsive-table td, 
+	table.responsive-table tr { 
+		display: block; 
+	}
+ 
+	table.responsive-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	table.responsive-table tr { /*border: 1px solid #ccc;*/ }
+	table.responsive-table td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 35%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	table.responsive-table td:before { 
+		position: absolute;
+  	left: .75em;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+    padding-top: 6px;
+	}
+ 
+	table.responsive-table td:before { content: attr(data-title); }
+  table.responsive-table td:first-child {background: #eee;}
+}
+
+table.responsive-table td select {width: 40%}
